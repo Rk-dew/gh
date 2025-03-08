@@ -159,8 +159,8 @@ body {
 
 button {
   position: relative;
-  top: 20%;
-  font-size: 24pt;
+  bottom: 40%;
+  font-size: 30pt;
   letter-spacing: 3px;
   background: #9b1c2c;
   border: none;
@@ -186,4 +186,4 @@ button:hover {
 
 button:focus {
   outline: none;
-}v
+}
