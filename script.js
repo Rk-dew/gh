@@ -1,17 +1,3 @@
-// script.js
-const slider = document.querySelector('.slider');
-let angle = 0;
-
-// Rotate manually using left and right arrow keys
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'ArrowRight') {
-    angle -= 60; // Rotate clockwise
-  } else if (e.key === 'ArrowLeft') {
-    angle += 60; // Rotate counter-clockwise
-  }
-  slider.style.transform = `rotateY(${angle}deg)`;
-});
-
 import confetti from "https://cdn.skypack.dev/canvas-confetti";
 const doItNow = (evt, hard) => {
   const direction = Math.sign(lastX - evt.clientX);
@@ -43,3 +29,17 @@ butt.addEventListener("click", doItHard);
 function r(mi, ma) {
   return parseInt(Math.random() * (ma - mi) + mi);
 }
+// script.js
+const slider = document.querySelector('.slider');
+let angle = 0;
+
+// Rotate manually using left and right arrow keys
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') {
+    angle -= 60; // Rotate clockwise
+  } else if (e.key === 'ArrowLeft') {
+    angle += 60; // Rotate counter-clockwise
+  }
+  slider.style.transform = `rotateY(${angle}deg)`;
+});
+
